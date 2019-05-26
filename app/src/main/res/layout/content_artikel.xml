@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity.ContentActivity">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tanggal"
+            android:layout_margin="@dimen/margin_desc"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_desc"
+            android:text="Judul Artikel"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul"
+            android:layout_marginLeft="@dimen/margin_desc"
+            android:text="Tanggal Artikel"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_marginStart="@dimen/margin_desc"
+            android:layout_marginEnd="@dimen/margin_desc"
+            android:layout_marginBottom="@dimen/margin_desc"
+            android:text="Deskripsi"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/url_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/konten"
+            android:layout_marginStart="@dimen/margin_desc"
+            android:layout_marginEnd="@dimen/margin_desc"
+            android:text="URL"
+            android:textSize="10sp"
+            android:autoLink="web"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/konten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsi"
+            android:layout_margin="@dimen/margin_desc"
+            android:paddingBottom="10dp"
+            android:text="Content"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/penulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/url_site"
+            android:layout_marginStart="@dimen/margin_desc"
+            android:layout_marginEnd="@dimen/margin_desc"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="@dimen/margin_desc"
+            android:text="Penulis : "
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

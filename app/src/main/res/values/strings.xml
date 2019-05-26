@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebService</string>
+    <string name="judul_artikel">Judul Artikel</string>
+    <string name="tanggal">Tanggal</string>
+</resources>
